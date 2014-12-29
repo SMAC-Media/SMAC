@@ -1,4 +1,4 @@
-IDI_ICON1 ICON DISCARDABLE "icons/archcoin.ico"
+IDI_ICON1 ICON DISCARDABLE "icons/archcoin.io"
 
 #include <windows.h>             // needed for VERSIONINFO
 #include "../../clientversion.h" // holds the needed client version information
@@ -18,14 +18,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Archcoin"
-            VALUE "FileDescription",    "Archcoin-Qt (OSS GUI client for Archcoin)"
+            VALUE "CompanyName",        "SMAC"
+            VALUE "FileDescription",    "SMAC-Qt (OSS GUI client for SMAC)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "archcoin-qt"
-            VALUE "LegalCopyright",     "2009-2014 The Archcoin developers"
+            VALUE "InternalName",       "SMAC-qt"
+            VALUE "LegalCopyright",     "2009-2014 The SMAC developers"
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license."
-            VALUE "OriginalFilename",   "archcoin-qt.exe"
-            VALUE "ProductName",        "Archcoin-Qt"
+            VALUE "OriginalFilename",   "SMAC-qt.exe"
+            VALUE "ProductName",        "SMAC-Qt"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END
