@@ -2521,10 +2521,10 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
-        // Genesis block
-        const char* pszTimestamp = "Manchester United tie Tottenham 0-0 12-28-14";
+         // Genesis block
+        const char* pszTimestamp = "12 killed in shooting at French satirical magazine";
         CTransaction txNew;
-        txNew.nTime = 1412281551;
+        txNew.nTime = 1420686082;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2534,12 +2534,14 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1412281551;
+        block.nTime    = 1420686082;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = !fTestNet ? 231233 : 154235;
+        block.nNonce   = !fTestNet ? 1846316 : 152640;
+        
+
 
         //// Debug print
-        assert(block.hashMerkleRoot == uint256("0x"));
+       assert(block.hashMerkleRoot == uint256("0xd9b9f65f801488229d823e37b09377d99d92e645a582760a69780d3e0b4338a3"));
         
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
